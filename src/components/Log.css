@@ -1,0 +1,110 @@
+   
+/* Reset some default styles */
+/* body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+      } */
+
+      body{
+
+       background-color: black;
+
+      }
+        
+       
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        left: -0.5rem;
+        
+      }
+      
+      .login-form {
+        display: flex;
+        position: relative;
+        left: 28rem;
+        top: 5rem;
+        flex-direction: column;
+        height: 35rem;
+        width: 150%; /* Make the form responsive */
+        max-width: 440px; /* Max width for larger screens */
+        padding: 20px;
+        border-radius: 4rem;
+        box-shadow: 5px 5px 25px white;
+        background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*9Ubhg3vuq23_OD92.png);
+        background-size: cover;
+       border: 2px solid white;
+        background-repeat: no-repeat;
+        align-items: center; /* Center the input fields and button */
+      }
+      
+      .login-form input {
+        width: 100%; /* Make input fields take the full width of the form */
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        top: 8rem;
+        position: relative ;
+        box-sizing: border-box;
+        box-shadow: 5px  5px  20px  white;
+
+      }
+      
+      .login-form button {
+        width: 100%; /* Make the button take the full width of the form */
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        top: 8rem;
+      }
+      
+      .login-form button:hover {
+        background-color: yellow;
+        color: black;
+
+      }
+
+
+     
+      .login-form input:hover{
+             
+           box-shadow: 5px 5px 10px white;
+
+      }
+      
+      /* Media Query for smaller screens */
+      @media (max-width: 600px) {
+        .login-form {
+        position: relative;
+        left: 2rem;
+        height: 27rem;
+          width: 20rem; /* Adjust width for smaller screens */
+        }
+      }
+
+      @media (max-width : 600px) {
+         
+           .login-form input{
+               
+                position: relative;
+                top: 6rem;
+
+           }
+ 
+
+      }
